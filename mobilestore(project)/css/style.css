@@ -1,0 +1,27 @@
+/* Add a hover effect with a scale animation */
+div {
+    transition: transform 3s ease, cubic-bezier(0.075, 0.82, 0.165, 1); /* Smooth animation */
+  }
+  
+  /* Scale the image and add a shadow on hover */
+ div:hover {
+    transform: scale(1); /* Slightly enlarge the image */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Add a shadow effect */
+  }
+  
+  /* Optional: Add a fade-in effect for images */
+div {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+  
+  /* Keyframes for fade-in effect */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
